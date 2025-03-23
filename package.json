@@ -1,7 +1,7 @@
 {
   "name": "@drivly/itty-authjs",
   "description": "Drivly's Auth.js library for Itty Router",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "private": false,
   "main": "dist/index.js",
   "type": "module",
