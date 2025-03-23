@@ -137,7 +137,7 @@ export default router
 
 ## API Reference
 
-### Auth Namespace
+### IAuth Namespace
 
 The `IAuth` namespace provides a cleaner way to import and use the library:
 
@@ -182,7 +182,6 @@ const authConfig = createConfig({
       signIn: '/custom-login',
     },
     trustHost: true,
-    
   },
 })
 ```
@@ -195,7 +194,7 @@ const authConfig = createConfig({
 - `AuthConfig`: Auth.js configuration type
 - `ConfigHandler`: Function type for auth configuration callbacks
 
-### Auth Namespace Types
+### IAuth Namespace Types
 
 The `IAuth` namespace also includes these types:
 
@@ -204,20 +203,6 @@ The `IAuth` namespace also includes these types:
 - `IAuth.User`: Same as `AuthUser`
 - `IAuth.Config`: Same as `AuthConfig`
 - `IAuth.Handler`: Same as `ConfigHandler`
-
-### Backward Compatibility
-
-For backward compatibility, the package also exports an `IAuth` namespace:
-
-```typescript
-// For users migrating from previous versions
-import { IAuth } from '@drivly/itty-authjs'
-
-type MyRequest = IAuth.Request // Same as AuthRequest
-type MyConfig = IAuth.Config // Same as AuthConfig
-type MyEnv = IAuth.Env // Same as AuthEnv
-type MyUser = IAuth.User // Same as AuthUser
-```
 
 ## Advanced Configuration
 
