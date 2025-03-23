@@ -143,8 +143,6 @@ export function handleAuthRoutes(): RequestHandler<AuthRequest, CFArgs> {
   }
 }
 
-// ========== Namespace Object (Optional) ==========
-
 /**
  * Creates a standard auth configuration with sensible defaults
  * @param options Basic configuration options
@@ -170,6 +168,8 @@ export function createConfig(options: {
     }
   }
 }
+
+// ========== Namespace Object (Optional) ==========
 
 export const IAuth = {
   setup: setupAuth,
