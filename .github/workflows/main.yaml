@@ -1,8 +1,8 @@
 name: CI
 on:
   push:
-    branches: 
-      - "**"
+    branches:
+      - '**'
 
 jobs:
   build:
@@ -17,6 +17,6 @@ jobs:
           node-version: 18.x
           cache: 'pnpm'
 
-      - run: pnpm install --frozen-lockfile
+      - name: Install dependencies
+        run: pnpm install
       - run: pnpm run ci
-      
